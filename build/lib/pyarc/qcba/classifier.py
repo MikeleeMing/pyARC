@@ -22,7 +22,7 @@ class QuantitativeClassifier:
                 antecedent_dict = dict(rule.antecedent)  
                 counter = True
 
-                for name, value in row.iteritems():
+                for name, value in row.items():
                     if name in antecedent_dict:
                         interval = antecedent_dict[name]
 

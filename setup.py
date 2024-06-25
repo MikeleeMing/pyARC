@@ -7,6 +7,9 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 
+print(len(long_description))
+
+
 setup(
   name='pyarc',
   packages=['pyarc', "pyarc.data_structures", "pyarc.algorithms", "pyarc.qcba", "pyarc.utils","pyarc.qcba.data_structures"],
@@ -20,5 +23,5 @@ setup(
   download_url='https://github.com/jirifilip/pyARC/archive/1.0.tar.gz',
   keywords='classification CBA association rules machine learning',
   classifiers=[],
-  install_requires=['pandas', 'numpy', 'sklearn', "pyfim"]
+  install_requires=['pandas', 'numpy', 'scikit-learn', "pyfim"]
 )
